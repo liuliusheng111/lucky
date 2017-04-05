@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: user
+  cloud:
+    config:
+      uri:http://config:7777
+eureka:
+  instance:
+    non-secure-port: ${server.port:9000}
+    preferIpAddress: true
+    lease-expiration-duration-in-seconds: 1
+    lease-renewal-interval-in-seconds: 10
+    instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${spring.application.instance_id:${server.port}}
+  client:
+    service-url:
+      defaultZone: http://discovery:8761/eureka/
+    instance:
+
