@@ -1,7 +1,6 @@
 package com.szss.user;
 
-import com.szss.user.client.GitHubClient;
-import com.szss.user.entity.Contributor;
+//import com.szss.user.entity.Contributor;
 import com.szss.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -22,8 +21,7 @@ import java.util.List;
 @RestController
 public class UserApplication {
 
-    @Autowired
-    private GitHubClient gitHub;
+
     @Autowired
     UserService userService;
 

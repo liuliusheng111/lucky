@@ -1,3 +1,4 @@
+/*
 package com.szss.user.entity;
 
 public class Contributor {
@@ -22,4 +23,4 @@ public class Contributor {
         this.contributions = contributions;
     }
 
-}
+}*/
