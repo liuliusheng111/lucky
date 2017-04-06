@@ -45,8 +45,10 @@
                             <directory>${project.build.directory}</directory>
                         </resource>
                     </resources>
-                    <dockerHost>https://192.168.99.100:2376</dockerHost>
+                    <dockerHost>https://47.92.24.61:2377</dockerHost>
+                    <!--
                     <dockerCertPath>/Users/admin/.docker/machine/machines/default</dockerCertPath>
+                    -->
                 </configuration>
             </plugin>
             <plugin>
