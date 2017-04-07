@@ -13,4 +13,7 @@ public class DiscoveryApplication {
     public static void main(String[] args) {
         new SpringApplicationBuilder(DiscoveryApplication.class).web(true).run(args);
     }
+    public void test(){
+        System.out.printf("hahahha");
+    }
 }
