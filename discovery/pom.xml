@@ -37,7 +37,10 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.12</version>
                 <configuration>
+                    <!--
                     <imageName>${project.name}:${project.version}</imageName>
+                    -->
+                    <imageName>172.26.179.88:5000/${project.name}</imageName>
                     <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
                     <skipDockerBuild>false</skipDockerBuild>
                     <resources>
@@ -45,8 +48,8 @@
                             <directory>${project.build.directory}</directory>
                         </resource>
                     </resources>
-                    <dockerHost>https://47.92.24.61:2377</dockerHost>
                     <!--
+                    <dockerHost>https://47.92.24.61:2377</dockerHost>
                     <dockerCertPath>/Users/admin/.docker/machine/machines/default</dockerCertPath>
                     -->
                 </configuration>
